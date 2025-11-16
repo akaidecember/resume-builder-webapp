@@ -1,7 +1,7 @@
 # Resume Builder Webapp
 Generate polished resumes from a simple web form. The React frontend lets you edit, reorder sections, and preview; the FastAPI backend converts your JSON into LaTeX and returns a PDF.
 
-![current_ui](image.png)
+![current_ui](images/image.png)
 
 ## Features
 - Drag-and-drop section ordering (education, skills, experience, projects, certificates)
