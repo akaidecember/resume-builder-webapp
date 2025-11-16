@@ -1,5 +1,7 @@
-# Resume Builder
+# Resume Builder Webapp
 Generate polished resumes from a simple web form. The React frontend lets you edit, reorder sections, and preview; the FastAPI backend converts your JSON into LaTeX and returns a PDF.
+
+![current_ui](image.png)
 
 ## Features
 - Drag-and-drop section ordering (education, skills, experience, projects, certificates)
@@ -53,11 +55,11 @@ docker-compose up --build
 - Backend: http://localhost:8000  
 `VITE_API_URL` is wired to the backend service inside compose.
 
-## API at a Glance
-`POST /api/resume/generate-pdf`
-- Body: `{ resume_data, section_order, font_size, margin_top/bottom/left/right, one_line_education }`
-- Response: `application/pdf` (or JSON error)
-- See `PROJECT_OVERVIEW.md` for a sample payload and flow diagram.
+## Bugs/Issues
+ 
+* Currently the resume pdf is not displayed as it is printed out to the pdf, I'm still working on it.
+* The font slider does not seem to work curerntly.
+
 
 ## Troubleshooting
 - **PDF generation fails:** Ensure `pdflatex` is installed and available to the backend container/host.
